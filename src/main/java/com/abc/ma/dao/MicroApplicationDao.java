@@ -2,6 +2,7 @@ package com.abc.ma.dao;
 
 import com.abc.ma.controller.model.CustomerData;
 import com.abc.ma.entity.Customer;
+import com.abc.ma.exception.ApplicationException;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -20,7 +21,7 @@ public class MicroApplicationDao {
     public Customer addCustomer(Customer customer) throws Exception {
         if(customer == null) {
             System.out.println("Exception Thrown");
-            throw new Exception("sad");
+            throw new ApplicationException("Invalid Input");
         }
         if(customer.getId() == 0) {
 
