@@ -66,6 +66,13 @@
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.5</version>
+                <configuration>
+                    <excludes>
+                        <exclude>com.abc.ma.controller.model.*</exclude>
+                        <exclude>com.abc.ma.entity.*</exclude>
+                        <exclude>com.abc.ma.Application</exclude>
+                    </excludes>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
@@ -78,18 +85,6 @@
                         <goals>
                             <goal>report</goal>
                         </goals>
-                        <configuration>
-                            <rules>
-                                <rule>
-                                    <excludes>
-                                        <exclude>com.abc.ma.controller.model.*</exclude>
-                                        <exclude>com.abc.ma.entity.*</exclude>
-                                        <exclude>com.abc.ma.Application</exclude>
-                                        <exclude>com.abc.ma.mapper.*</exclude>
-                                    </excludes>
-                                </rule>
-                            </rules>
-                        </configuration>
                     </execution>
                     <execution>
                         <id>check</id>
@@ -113,12 +108,6 @@
                                             <minimum>0.80</minimum>
                                         </limit>
                                     </limits>
-                                    <excludes>
-                                        <exclude>com.abc.ma.controller.model.*</exclude>
-                                        <exclude>com.abc.ma.entity.*</exclude>
-                                        <exclude>com.abc.ma.Application</exclude>
-                                        <exclude>com.abc.ma.mapper.*</exclude>
-                                    </excludes>
                                 </rule>
                             </rules>
                         </configuration>
