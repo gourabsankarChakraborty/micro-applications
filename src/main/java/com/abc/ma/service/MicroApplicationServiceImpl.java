@@ -1,7 +1,7 @@
 package com.abc.ma.service;
 
-import com.abc.ma.controller.mapper.request.RequestMapper;
-import com.abc.ma.controller.mapper.response.ResponseMapper;
+import com.abc.ma.mapper.request.RequestMapper;
+import com.abc.ma.mapper.response.ResponseMapper;
 import com.abc.ma.controller.model.CustomerData;
 import com.abc.ma.dao.MicroApplicationDao;
 import com.abc.ma.entity.Customer;

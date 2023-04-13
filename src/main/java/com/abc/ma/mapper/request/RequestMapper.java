@@ -1,4 +1,4 @@
-package com.abc.ma.controller.mapper.request;
+package com.abc.ma.mapper.request;
 
 import com.abc.ma.controller.model.CustomerData;
 import com.abc.ma.entity.Customer;

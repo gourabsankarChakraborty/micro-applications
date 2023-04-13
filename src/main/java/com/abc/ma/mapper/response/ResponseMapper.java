@@ -1,4 +1,4 @@
-package com.abc.ma.controller.mapper.response;
+package com.abc.ma.mapper.response;
 
 import com.abc.ma.controller.model.CustomerData;
 import com.abc.ma.entity.Customer;
